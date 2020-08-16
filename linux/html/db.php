@@ -1,8 +1,8 @@
 <?php
-$dbuser = 'mgdifnkargkimx';
-$dbpass = 'ce1782a7310907121c9381457d8e0c90b98195d554824f7487050b3b52cf45b5';
-$host = 'ec2-3-215-207-12.compute-1.amazonaws.com';
-$dbname='dbm95l24lu9fgo';
+$dbuser = 'labxuqgojbd123';
+$dbpass = '16171458e5a062b7ec9541a3290626221ec11daeef6c0c2fa96fa1bf5db70123';
+$host = 'ec2-35-175-155-248.compute-1.amazonaws.com';
+$dbname='dc4hmb1sbma123';
 $port="5432";
 $dsn = "pgsql:host=$host;port=$port;dbname=$dbname;user=$dbuser;password=$dbpass;sslmode=require";
 try{
