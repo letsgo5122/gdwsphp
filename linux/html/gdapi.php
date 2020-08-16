@@ -26,7 +26,6 @@ switch ($act) {
 }
 
 function listUser($pdo,$name){
-	$ret_arr= array();
   try{
 	$sql = "SELECT id,name,passwd FROM public.user WHERE name = :name" ;
 	$stmt = $pdo->prepare($sql);
@@ -34,12 +33,7 @@ function listUser($pdo,$name){
     $stmt->execute();
 	$result = $stmt->fetchAll();   
 	if ($result==null){return json_encode($ret_arr);}
-
-	foreach($result as $row)
-		{			
-			array_push($ret_arr, $row[0].$row[1].$row[2]);
-		} 
-	return json_encode($ret_arr);
+	return json_encode($result);
   }
   catch(PDOException $e){
 	echo 'error'.$e->getMessage();

@@ -15,9 +15,13 @@ _global_script_class_icons={
 
 [application]
 
-config/name="gdwsphp"
+config/name="gdwsphp2"
 run/main_scene="res://lobby.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+net="*res://net.gd"
 
 [display]
 
@@ -60,4 +64,6 @@ locale_filter=[ 0, [ "zh", "zh_TW" ] ]
 
 [rendering]
 
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
 environment/default_environment="res://default_env.tres"
